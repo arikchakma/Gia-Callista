@@ -1,0 +1,43 @@
+{
+	"name": "gia-callista",
+	"version": "1.0.0",
+	"description": "It's a javascript utilities library for working fast &amp; we're making it better day by day. ",
+	"module": "index.js",
+	"main": "index.js",
+	"scripts": {},
+	"keywords": [
+		"RuchiJS",
+		"Rushi",
+		"locomotive-scroll",
+		"gsap",
+		"Arik Chakma",
+		"eetpixel",
+		"mr shadow whisper",
+		"Pollen Chakma"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/arikchakma/Gia-Callista.git"
+	},
+	"author": "Arik Chakma",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/arikchakma/Gia-Callista/issues"
+	},
+	"homepage": "https://github.com/arikchakma/Gia-Callista#readme",
+	"dependencies": {
+		"gsap": "^3.7.1",
+		"locomotive-scroll": "^4.1.1"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"eslint": "7.2.0",
+		"eslint-config-airbnb": "18.2.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "2.22.1",
+		"eslint-plugin-jsx-a11y": "6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "7.21.5",
+		"eslint-plugin-react-hooks": "1.7.0"
+	}
+}
