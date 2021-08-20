@@ -1,6 +1,6 @@
 {
 	"name": "gia-callista",
-	"version": "1.1.",
+	"version": "1.1.0",
 	"description": "It's a javascript utilities library for working fast &amp; we're making it better day by day. ",
 	"module": "index.js",
 	"main": "index.js",
