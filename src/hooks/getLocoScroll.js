@@ -1,10 +1,23 @@
 import ScrollTrigger from "gsap/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
+/**
+ * useLocoScroll - Help you to eneble smooth scrolling
+ * @param {string | Object} element - The main scroll container
+ * @param {number} speed - Smooth scroll speed
+ */
 
-export default function useLocoScroll(element, speed = 1) {
+export function getLocoScroll({ element, speed } = { speed: 1 }) {
+  let Element;
+
+  // Guard clause
+  if (typeof element === "string") {
+    Element = document.querySelector(element);
+  } else {
+    Element = element || document.querySelector(".smooth-scroll");
+  }
+
   // Getting the scroll container or main componenet
-  const Element = element ? element : document.querySelector(".smooth-scroll");
-  const SmoothEl = element ? element : ".smooth-scroll";
+  const ElementEl = element ? element.className : ".smooth-scroll";
 
   // Writing the logic
   const locoScroll = new LocomotiveScroll({
@@ -16,11 +29,12 @@ export default function useLocoScroll(element, speed = 1) {
     tablet: { smooth: true },
 
     // for mobile
-    smartphone: { smooth: true },
+    smartphone: { smooth: true }
   });
+
   locoScroll.on("scroll", ScrollTrigger.update);
 
-  ScrollTrigger.scrollerProxy(SmoothEl, {
+  ScrollTrigger.scrollerProxy(ElementEl, {
     scrollTop(value) {
       return arguments.length
         ? locoScroll.scrollTo(value, 0, 0)
@@ -31,9 +45,9 @@ export default function useLocoScroll(element, speed = 1) {
         top: 0,
         left: 0,
         width: window.innerWidth,
-        height: window.innerHeight,
+        height: window.innerHeight
       };
-    },
+    }
   });
 
   return locoScroll;
