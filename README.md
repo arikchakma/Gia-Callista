@@ -1,6 +1,6 @@
 # Gia-Callista
 
-It's a javascript utility library for working fast &amp; we're making it better day by day.
+It is a javascript utility package for coding fast, and we are making it tasty day by day.
 
 # Instalation
 
