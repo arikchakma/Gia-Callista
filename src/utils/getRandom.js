@@ -1,10 +1,12 @@
 /**
  * Generate random numbers in a specified range
- * @param { number } min
- * @param { number } max
+ * @param { number } minimum - default 0
+ * @param { number } maximum - default 1
  */
-export const getRandomNum = (minimum, maximum) =>
-  Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+export function getRandomNum(minimum = 0, maximum = 1) {
+	if (maximum === 1 && minimum === 0) return Math.random();
+	return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+}
 
 /**
  * Generate a random rgb color
@@ -13,11 +15,11 @@ export const getRandomNum = (minimum, maximum) =>
  */
 
 export function getRandomRGB(alpha = 1) {
-  const getRandomNum = (minimum, maximum) =>
-    Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+	const getRandomNum = (minimum, maximum) =>
+		Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 
-  return `rgba(${getRandomNum(0, 255)}, ${getRandomNum(0, 255)}, ${getRandomNum(
-    0,
-    255
-  )}, ${alpha})`;
+	return `rgba(${getRandomNum(0, 255)}, ${getRandomNum(0, 255)}, ${getRandomNum(
+		0,
+		255
+	)}, ${alpha})`;
 }
