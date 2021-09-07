@@ -27,7 +27,6 @@
 	},
 	"homepage": "https://github.com/arikchakma/Gia-Callista#readme",
 	"dependencies": {
-		"gsap": "^3.7.1",
-		"locomotive-scroll": "^4.1.1"
+		"react": "^17.0.2"
 	}
 }
