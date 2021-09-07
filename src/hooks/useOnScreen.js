@@ -1,6 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-function useOnScreen(ref, rootMargin = '0px') {
+/**
+ * useOnScrren hook
+ * @param {*} ref - Element which you want to observe, use useRef() hook for that.
+ * @param {String} rootMargin
+ * @returns - true or false
+ */
+function useOnScreen(ref, rootMargin = "0px") {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
