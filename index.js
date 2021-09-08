@@ -1,4 +1,4 @@
-import { getLocoScroll } from './src/hooks/getLocoScroll';
+// import { getLocoScroll } from './src/hooks/getLocoScroll';
 import { getRandomNum, getRandomRGB } from './src/utils/getRandom';
 import getViewportSizes from './src/utils/getViewporSizes';
 import logger from './src/utils/logger';
@@ -8,7 +8,7 @@ import getCoffee from './src/utils/getCoffee';
 import useCustomMouse from './src/hooks/useCustomMouse';
 
 const Gia = {
-	getLocoScroll,
+	// getLocoScroll,
 	logger,
 	getViewportSizes,
 	getRandomNum,
