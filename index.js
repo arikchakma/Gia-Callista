@@ -5,6 +5,7 @@ import logger from './src/utils/logger';
 import useMousePosition from './src/hooks/useMousePosition';
 import useOnScreen from './src/hooks/useOnScreen';
 import getCoffee from './src/utils/getCoffee';
+import useCustomMouse from './src/hooks/useCustomMouse';
 
 const Gia = {
 	getLocoScroll,
@@ -14,7 +15,8 @@ const Gia = {
 	getRandomRGB,
 	useMousePosition,
 	useOnScreen,
-	getCoffee
+	getCoffee,
+	useCustomMouse
 };
 
 /**
