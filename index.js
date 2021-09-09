@@ -6,6 +6,7 @@ import useMousePosition from './src/hooks/useMousePosition';
 import useOnScreen from './src/hooks/useOnScreen';
 import getCoffee from './src/utils/getCoffee';
 import useCustomMouse from './src/hooks/useCustomMouse';
+import useInterval from './src/hooks/useInterval';
 
 const Gia = {
 	// getLocoScroll,
@@ -16,7 +17,8 @@ const Gia = {
 	useMousePosition,
 	useOnScreen,
 	getCoffee,
-	useCustomMouse
+	useCustomMouse,
+	useInterval
 };
 
 /**
