@@ -22,4 +22,4 @@ const Gia = {
 /**
  * @returns Gia Object
  */
-module.exports = Gia;
+export default Gia;
