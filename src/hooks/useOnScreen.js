@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
  * @param {String} rootMargin
  * @returns - true or false
  */
-function useOnScreen(ref, rootMargin = "0px") {
+ export default function useOnScreen(ref, rootMargin = "0px") {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -26,4 +26,3 @@ function useOnScreen(ref, rootMargin = "0px") {
   return isVisible;
 }
 
-export default useOnScreen;

@@ -3,10 +3,10 @@ import { getRandomNum, getRandomRGB } from './src/utils/getRandom';
 import getViewportSizes from './src/utils/getViewporSizes';
 import logger from './src/utils/logger';
 import useMousePosition from './src/hooks/useMousePosition';
-import useOnScreen from './src/hooks/useOnScreen';
 import getCoffee from './src/utils/getCoffee';
 import useCustomMouse from './src/hooks/useCustomMouse';
 import useInterval from './src/hooks/useInterval';
+import useOnScreen from './src/hooks/useOnScreen'
 
 const Gia = {
 	// getLocoScroll,
@@ -15,10 +15,10 @@ const Gia = {
 	getRandomNum,
 	getRandomRGB,
 	useMousePosition,
-	useOnScreen,
 	getCoffee,
 	useCustomMouse,
-	useInterval
+	useInterval,
+	useOnScreen,
 };
 
 /**
